@@ -2,6 +2,9 @@ require 'rbconfig'
 require 'find'
 require 'ftools'
 
+
+
+
 include Config
 
 # this was adapted from rdoc's install.rb by way of Log4r
@@ -18,6 +21,9 @@ unless $sitedir
   end
 end
 
+
+
+
 # the actual gruntwork
 Dir.chdir("lib")
 
@@ -27,4 +33,8 @@ Find.find("action_mailer", "action_mailer.rb") { |f|
   else
     File::makedirs(File.join($sitedir, *f.split(/\//)))
   end
+  
+  
+  
+  
 }

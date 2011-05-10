@@ -29,6 +29,9 @@ rescue LoadError
     $:.unshift actionpack_path
     require 'action_controller'
   end
+  
+  
+  
 end
 
 require 'action_view'

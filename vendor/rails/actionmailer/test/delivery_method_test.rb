@@ -7,9 +7,11 @@ class NonDefaultDeliveryMethodMailer < ActionMailer::Base
   self.delivery_method = :sendmail
 end
 
+
 class ActionMailerBase_delivery_method_Test < Test::Unit::TestCase
   def setup
     set_delivery_method :smtp
+    
   end
   
   def teardown
