@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Untitled Document</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
+</head>
+
+<body bgcolor="#CCCC99">
+<p>YOUR RECORD HAS BEEN SUCCESFULLY UPDATED PLEASE CHECK IT........</p>
+<p>&nbsp;</p>
+
+
+<p><label for="book_Details">Name</label>:
+<%= text_field 'book', 'name' %></p>
+
+<p><label for="book_category">Category</label>:
+<%= text_field 'book', 'category' %></p>
+<p><label for="user_author">Author</label><br/>
+<%= text_field 'book', 'author' %></p>
+
+
+<p><label for="book_price">price</label><br/>
+<%= text_field 'book', 'price' %></p>
+
+To INSERT ANOTHER RECORD<%= link_to " CLICK HERE", :action=>"new"%>
+
+To SEE THE LIST<%= link_to " CLICK HERE", :action=>"list"%>
+
+
+</body>
+</html>

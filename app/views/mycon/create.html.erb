@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CREATE</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
+</head>
+
+<body bgcolor="#FFCCCC">
+             <%= @s%>
+
+ <% form_for :user, :url => { :action => "create"} do  %>
+
+ <p><label for="user_Details">Name</label>
+:
+ <%= text_field ('user', 'name') %> <%= error_message_on :user, :name %></p>
+
+<p>
+  <label for="user_email">Email </label>
+:
+  <%= text_field ('user', 'email') %> </p><%= error_message_on :user, :email %>
+<p><label for="user_mobilenumber">Mobile</label>
+<%= text_field( 'user', 'phone') %></p> <%= error_message_on :user, :phone %>
+
+<p><%= submit_tag "create" %></p>
+<p>
+  <%end%>
+  
+
+</body>
+</html>

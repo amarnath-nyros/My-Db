@@ -1,0 +1,18 @@
+
+<html>
+<body  bgcolor="#CCCCFF">
+<h1>THESE ARE YOUR DETAILS</h1>
+
+<p><label for="user_Details">Name</label>:
+<%= text_field 'user', 'name' %></p>
+
+<p><label for="user_email">Email</label>:
+<%= text_field 'user', 'email' %></p>
+
+<p><label for="user_mobilenumber">Mobile</label><br/>
+<%= text_field 'user', 'phone' %></p>
+
+<%= link_to "edit", :action=>"edit" ,:id=> @user.id%>
+
+</body>
+</html>>
